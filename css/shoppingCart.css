@@ -1,0 +1,122 @@
+
+.table{
+    display: flex;
+    gap: 40px;
+   
+}
+
+.table table{
+    min-width: 600px;
+    border-collapse: collapse;
+    
+}
+
+.table table thead{
+    background-color:#e0e1ff;
+    height: 8vh;
+}
+
+.table table tbody tr td{
+    border: 1px solid #e0e1ff ;
+    text-align: center;
+    height: 10vh;
+    font-size: 18px;
+}
+.table table tbody tr td div img{
+    width: 50px;
+    height: 50px;
+}
+.table table tbody tr td div{
+    height: 100%;
+    width: 100%;
+}
+.table table tbody tr td:nth-child(3) i{
+    background-color: #e0e1ff;
+    padding: 5px 8px;
+}
+
+.table table tbody tr td:nth-child(5) i{
+    color: red;
+}
+.table .lefth-shopping{
+    width: 100%;
+}
+.table .lefth-shopping form {
+    height: 8vh;
+    display: flex;
+}
+@media (max-width:1000px) {
+    .table{
+        flex-wrap: wrap;
+    }
+    .table table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+}
+.table .lefth-shopping form input{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 1px solid gainsboro;
+    outline: navajowhite;
+    height: 100%;
+}
+.table .lefth-shopping form button{
+    width:150px;
+    font-size: 16px;
+    background-color:var(--towColor);
+    padding: 0;
+    transition: 0.3s;
+    height: 100%;
+    border-radius: 0;
+}
+.table .lefth-shopping form button:hover{
+    color: #000;
+}
+@media (max-width:800px) {
+    .table{
+        overflow-x: scroll;
+    }
+    .table table{
+        min-width: 500px;
+        border-collapse: collapse;
+        
+    }
+    .table .lefth-shopping form button{
+        width:100px;
+        font-size: 12px;
+    }
+    .table .lefth-shopping form input{
+        width: 150px;
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+}
+.table .lefth-shopping .final{
+    margin-top: 20px;
+    border: 1px solid #e0e1ff;
+    width: 100%;
+}
+.table .lefth-shopping .final div{
+    padding: 15px;
+}
+.table .lefth-shopping .final div:first-child{
+    background-color: #e0e1ff;
+    
+}
+.table .lefth-shopping .final div:first-child h3{
+    font-weight: bold;
+}
+.table .lefth-shopping .final div:last-child a{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    height: 100%;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: var(--towColor);
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenr sp-flex-row">
+        <a href="../index.html"
+          ><div class="logo">You<span>Shop</span></div></a
+        >
+        <nav class="sp-flex-row">
+          <ul class="menu ar-flex-row">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Our Story</a></li>
+          </ul>
+          <ul class="menu2 sp-flex-row">
+            <li>
+              <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <li>
+              <a href="../pages/shoppingCart.html" target="_blank">
+                <i class="fa fa-cart-shopping"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa-regular fa-user"></i> </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mune-bar center-flex-row">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="contenr center-flex-row">
+        <h1>Checkout</h1>
+      </div>
+    </main>
+    <div class="information-user">
+      <div class="contenr sp-flex-row">
+        <form class="one-info sp-flex-culom">
+          <h1>Billing Address</h1>
+          <div class="div">
+            <div class="sp-flex-culom">
+              <label for="frist-name">First name</label>
+              <input type="text" id="frist-name" placeholder="first name" />
+            </div>
+            <div class="sp-flex-culom">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" placeholder="last name" />
+            </div>
+          </div>
+          <div>
+            <div class="div">
+              <div class="sp-flex-culom">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="exmpol@gamil.com" />
+              </div>
+              <div class="sp-flex-culom">
+                <label for="phone">Mobile No</label>
+                <input type="number" id="phone" placeholder="+212 0612345678" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="div">
+              <div class="sp-flex-culom">
+                <label for="Country">Country</label>
+                <select>
+                  <option value="use">Mrocco</option>
+                  <option value="use">Use</option>
+                  <option value="use">Egypt</option>
+                  <option value="use">USE</option>
+                </select>
+              </div>
+              <div class="sp-flex-culom">
+                <label for="City">City</label>
+                <input type="text" id="City" placeholder="City" />
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="lefth-information">
+          <div class="top">
+            <div class="heading">
+              <h3>Order Total</h3>
+            </div>
+            <div class="h">
+              <h4>Products</h4>
+              <div class="sp-flex-row">
+                <p>Lira Earrings</p>
+                <span>$ 20,00</span>
+              </div>
+              <div class="sp-flex-row">
+                <p>Hal Earrings</p>
+                <span>$ 25,00</span>
+              </div>
+            </div>
+            <div class="final">
+              <div class="sp-flex-row">
+                <p>Subtotal</p>
+                <p>$ 900</p>
+              </div>
+              <div class="sp-flex-row">
+                <p>Shipping</p>
+                <p>$ 30</p>
+              </div>
+            </div>
+            <div class="sp-flex-row fn">
+              <p>Total</p>
+              <p>$ 930</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="heading">
+              <h3>methode de paiement</h3>
+            </div>
+            <form>
+              <div>
+                <input type="radio" name="paiement" id="paypl" />
+                <label for="paypl"
+                  >paypal <i class="fa-brands fa-cc-paypal"></i
+                ></label>
+              </div>
+              <div>
+                <input type="radio" name="paiement" id="v" />
+                <label for="v">Paiement à réception</label>
+              </div>
+              <div>
+                <input type="radio" name="paiement" id="vsa" />
+                <label for="vsa"
+                  >Visa <i class="fa-brands fa-cc-visa"></i
+                ></label>
+              </div>
+              <button type="submit">BUY</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="contenr">
+        <div class="center sp-flex-row">
+          <nav>
+            <ul class="sp-flex-row sps">
+              <li>CONTACT</li>
+              <li>TERMS OF SERVICES</li>
+              <li>SHIPPING AND RETURNS</li>
+            </ul>
+          </nav>
+          <div class="footer-rigth sp-flex-row">
+            <p>Give an email, get the newsletter.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <nav class="posin">
+          <ul class="sp-flex-row">
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+.products{
+    margin-top: 40px;
+}
+.products .contenr .images{
+    height: 50vh;
+}
+.products .contenr {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.products .contenr .images img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    
+}
+.products .contenr .lefth{
+    gap: 40px;
+}
+
+.products .contenr .lefth button{
+    background-color: #49B0EA;
+    transition: 0.3s;
+}
+.products .contenr .lefth button:hover{
+    background-color: transparent;
+    color: #000;
+}
+@media (max-width:1010px) {
+    .products .contenr{
+        flex-wrap: wrap;
+    }
+}
+.cleint{
+    margin-top: 40px;
+}
+.cleint .commint{
+    margin: 40px  0 ;
+    background-color: #EFEFEF;
+    padding: 10px;
+    border-radius: 8px;
+    width: auto;
+}
+.cleint .image-name {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 10px;
+     
+}
+.cleint .image-name img{
+    width: 50px;
+}

@@ -1,0 +1,125 @@
+.one-info {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 3;
+  min-height: 50vh;
+  margin-bottom: 20px;
+}
+.one-info .div {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.one-info .div input {
+  padding: 8px 15px;
+  outline: none;
+  font-size: 18px;
+  width: 290px;
+
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #24292e;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  
+  box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+}
+label {
+  margin: 10px 0;
+}
+select {
+  width: 290px;
+  padding: 8px 15px;
+}
+.one-info .div input:focus {
+  border-color: #0366d6;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.lefth-information{
+    flex-grow: 1;
+    min-height: 50vh;
+    margin-bottom: 40px;
+}
+.information-user .contenr{
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.lefth-information .top{
+   
+    border: 1px solid #f3f8ff;
+    line-height: 2.5;
+}
+.lefth-information .top .h{
+    padding: 15px;
+}
+.lefth-information .top .h div:last-child{
+    border-bottom: 1px solid #d0cece ;
+}
+.lefth-information .top .heading,
+.lefth-information .bottom .heading{
+    background-color: #ecf5fe;
+    padding: 15px;
+}
+.lefth-information .top .heading h3,
+.lefth-information .bottom .heading h3{
+    font-weight: bold;
+}
+.final {
+    padding: 15px;
+}
+.final p{
+    margin: 5px 0;
+    font-weight: bold;
+}
+.fn{
+    padding: 15px;
+    background-color: #ecf5fe;
+    margin-bottom: 40px;
+}
+.fn p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.bottom form{
+    line-height: 2.5;
+    padding: 15px;
+}
+.bottom form div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bottom form input{
+    width: 20px;
+    height: 20px;
+}
+.bottom form button{
+    width: 100%;
+    position: relative;
+}
+.bottom form button::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: #0366d6;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s ;
+}
+
+.bottom form button:hover::after{
+    width: 0;
+}
+.bottom form button:hover{
+    color: #0366d6;
+}

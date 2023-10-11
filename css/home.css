@@ -1,0 +1,100 @@
+main .contenr {
+  height: calc(99vh - 10vh);
+  background-image: url(../image/Img\ 01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding-left: 20px;
+  color: var(--bg-Color-b);
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  main .contenr {
+    background-position: center;
+  }
+}
+main .contenr img {
+  height: 100%;
+}
+main .contenr button {
+  margin-top: 20px;
+}
+
+main .contenr .cercle {
+  gap: 10px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .contenr .cercle div {
+  width: 13px;
+  height: 13px;
+  border-radius: 50px;
+  background-color: var(--bg-Color-b);
+}
+main .contenr .cercle div:first-child {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.aside .contenr {
+  height: 17vh;
+  flex-wrap: wrap;
+}
+@media (max-width:370px) {
+    .aside .contenr h1{
+        font-size: 22px;
+        margin-right: 10px;
+    }
+}
+.aside .contenr{
+    font-size: 22px;
+}
+
+.products .contenr .cart .image::after{
+    content: "ADD TO CART";
+    position: absolute;
+    bottom: -10vh;
+    left: 0;
+    background-color: var(--bg-Color-b);
+    width: 100%;
+    height: 8vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.products .contenr .cart .image:hover::after{
+    bottom: 0;
+    z-index: 1;
+}
+
+.about{
+    height: auto;
+    margin-top: 40px;
+}
+.about .contenr .heading{
+    height: 12vh;
+   
+}
+        
+.about .contenr .description{
+    margin: 40px 0;
+}
+.about .contenr .img{
+    margin: 20px 0;
+}
+.about .contenr .tow{
+  margin: 20px 0;
+  padding: 20px;
+}
+.about .contenr .tow :last-child{
+  margin-top: 10px;
+  
+}
+
