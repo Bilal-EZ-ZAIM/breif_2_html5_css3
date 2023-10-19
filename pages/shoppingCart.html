@@ -24,9 +24,9 @@
     <header>
       <div class="contenr sp-flex-row">
         <a href="../index.html"
-          ><div class="logo">You<span>Shop</span></div></a
+          ><div class="logo">You<span>Shope</span></div></a
         >
-        <nav class="sp-flex-row">
+        <nav class="sp-flex-row" id="toggle">
           <ul class="menu ar-flex-row">
             <li><a href="#">Shop</a></li>
             <li><a href="#">Blog</a></li>
@@ -45,7 +45,7 @@
           </ul>
         </nav>
         <div class="mune-bar center-flex-row">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="bars"></i>
         </div>
       </div>
     </header>
@@ -55,7 +55,7 @@
       </div>
     </main>
 
-    <div class="table contenr">
+    <div class="table contenr" >
       <table>
         <thead>
           <tr>
@@ -66,95 +66,12 @@
             <th>Remove</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="ar-flex-row">
-                <img src="../image/Img 02.png" /> Lira Earrings
-              </div>
-            </td>
-            <td>$ 150.0</td>
-            <td class="ar-flex-row">
-              <i class="fa-solid fa-plus"></i> 1
-              <i class="fa-sharp fa-solid fa-minus"></i>
-            </td>
-            <td>$ 150.0</td>
-            <td><i class="fa-sharp fa-solid fa-trash"></i></td>
-          </tr>
-          <tr>
-            <td>
-              <div class="ar-flex-row">
-                <img src="../image/Img 02.png" /> Lira Earrings
-              </div>
-            </td>
-            <td>$ 150.0</td>
-            <td class="ar-flex-row">
-              <i class="fa-solid fa-plus"></i> 1
-              <i class="fa-sharp fa-solid fa-minus"></i>
-            </td>
-            <td>$ 150.0</td>
-            <td><i class="fa-sharp fa-solid fa-trash"></i></td>
-          </tr>
-          <tr>
-            <td>
-              <div class="ar-flex-row">
-                <img src="../image/Img 02.png" /> Lira Earrings
-              </div>
-            </td>
-            <td>$ 150.0</td>
-            <td class="ar-flex-row">
-              <i class="fa-solid fa-plus"></i> 1
-              <i class="fa-sharp fa-solid fa-minus"></i>
-            </td>
-            <td>$ 150.0</td>
-            <td><i class="fa-sharp fa-solid fa-trash"></i></td>
-          </tr>
-          <tr>
-            <td>
-              <div class="ar-flex-row">
-                <img src="../image/Img 02.png" /> Lira Earrings
-              </div>
-            </td>
-            <td>$ 150.0</td>
-            <td class="ar-flex-row">
-              <i class="fa-solid fa-plus"></i> 1
-              <i class="fa-sharp fa-solid fa-minus"></i>
-            </td>
-            <td>$ 150.0</td>
-            <td><i class="fa-sharp fa-solid fa-trash"></i></td>
-          </tr>
-          <tr>
-            <td>
-              <div class="ar-flex-row">
-                <img src="../image/Img 02.png" /> Lira Earrings
-              </div>
-            </td>
-            <td>$ 150.0</td>
-            <td class="ar-flex-row">
-              <i class="fa-solid fa-plus"></i> 1
-              <i class="fa-sharp fa-solid fa-minus"></i>
-            </td>
-            <td>$ 150.0</td>
-            <td><i class="fa-sharp fa-solid fa-trash"></i></td>
-          </tr>
-          <tr>
-            <td>
-              <div class="ar-flex-row">
-                <img src="../image/Img 02.png" /> Lira Earrings
-              </div>
-            </td>
-            <td>$ 150.0</td>
-            <td class="ar-flex-row">
-              <i class="fa-solid fa-plus"></i> 1
-              <i class="fa-sharp fa-solid fa-minus"></i>
-            </td>
-            <td>$ 150.0</td>
-            <td><i class="fa-sharp fa-solid fa-trash"></i></td>
-          </tr>
+        <tbody id="table">
+         
         </tbody>
       </table>
       <div class="lefth-shopping sp-flex-culom">
-        <form action="">
+        <form action="submit">
           <label for="coupon">
             <input type="text" id="coupon" placeholder="Coupon Code" />
           </label>
@@ -166,15 +83,15 @@
           </div>
           <div class="sp-flex-row">
             <h4>Subtotal</h4>
-            <h4>$ 900</h4>
+            <h4 id="Subtotal">$ 900</h4>
           </div>
           <div class="sp-flex-row">
             <h4>Shipping</h4>
             <h4>$ 30</h4>
           </div>
           <div class="sp-flex-row">
-            <h1>Total</h1>
-            <h1>$ 930</h1>
+            <h4 >Total</h4>
+            <h4 id="Total"></h4>
           </div>
           <div>
             <a href="../pages/checkeout.html" target="_blank"> Proceed To Checkout </a>
@@ -215,5 +132,7 @@
         </nav>
       </div>
     </footer>
+    <script type="module" src="../js/cart.mjs"></script>
+    <script type="module" src="../js/index.mjs"></script>
   </body>
 </html>

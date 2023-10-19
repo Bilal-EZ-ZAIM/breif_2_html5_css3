@@ -24,9 +24,9 @@
     <header>
       <div class="contenr sp-flex-row">
         <a href="../index.html"
-          ><div class="logo">You<span>Shop</span></div></a
+          ><div class="logo">You<span>Shope</span></div></a
         >
-        <nav class="sp-flex-row">
+        <nav class="sp-flex-row" id="toggle">
           <ul class="menu ar-flex-row">
             <li><a href="#">Shop</a></li>
             <li><a href="#">Blog</a></li>
@@ -47,7 +47,7 @@
           </ul>
         </nav>
         <div class="mune-bar center-flex-row">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars " id="bars"></i>
         </div>
       </div>
     </header>
@@ -105,21 +105,13 @@
             <div class="heading">
               <h3>Order Total</h3>
             </div>
-            <div class="h">
+            <div class="h" id="product">
               <h4>Products</h4>
-              <div class="sp-flex-row">
-                <p>Lira Earrings</p>
-                <span>$ 20,00</span>
-              </div>
-              <div class="sp-flex-row">
-                <p>Hal Earrings</p>
-                <span>$ 25,00</span>
-              </div>
             </div>
             <div class="final">
               <div class="sp-flex-row">
-                <p>Subtotal</p>
-                <p>$ 900</p>
+                <p >Subtotal</p>
+                <p id="subtotal"></p>
               </div>
               <div class="sp-flex-row">
                 <p>Shipping</p>
@@ -128,7 +120,7 @@
             </div>
             <div class="sp-flex-row fn">
               <p>Total</p>
-              <p>$ 930</p>
+              <p id="total"></p>
             </div>
           </div>
           <div class="bottom">
@@ -163,7 +155,6 @@
         <h3>La date de livraison</h3>
         <p>Vous recevrez votre commande dans les deux jours au soir</p>
       </div>
-      
     </div>
     <footer>
       <div class="contenr">
@@ -198,5 +189,7 @@
         </nav>
       </div>
     </footer>
+    <script src="../js/index.mjs"></script>
+    <script type="module" src="../js/checkout.mjs"></script>
   </body>
 </html>

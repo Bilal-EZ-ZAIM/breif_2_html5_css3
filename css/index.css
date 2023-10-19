@@ -4,6 +4,12 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
 :root {
   --colorFont: #000000;
   --towColor: #a18a68;
@@ -11,6 +17,7 @@
   --treeColor: #707070;
   --bg: #ffffff;
 }
+
 ul {
   display: flex;
   list-style: none;
@@ -34,8 +41,8 @@ h1,
 li,
 a,
 button,
-h4 ,
-label{
+h4,
+label {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
@@ -48,6 +55,9 @@ h1 {
 }
 h1 {
   font-size: 33px;
+}
+.abou {
+  font-size: 36px;
 }
 h3 {
   font-size: 26px;
@@ -81,10 +91,20 @@ img {
   margin: 0 auto;
   height: 100%;
 }
+@media print {
+  *{
+    display: none;
+  }
+  main{
+    display: block;
+    background-color: red;
+  }
+}
 /*large*/
+
 @media (min-width: 1200px) {
   .contenr {
-    width: 1700px;
+    min-width: 90%;
   }
 }
 
@@ -169,7 +189,11 @@ header nav ul li a {
   transition: 0.3s;
 }
 header nav ul li a:hover {
-  color: rgb(30, 30, 255);
+  color: #686aa1;
+}
+header .contenr .menu {
+  width: 350px;
+  border-right: 1px solid var(--treeColor);
 }
 @media (max-width: 768px) {
   header .contenr nav {
@@ -177,21 +201,73 @@ header nav ul li a:hover {
   }
   header .contenr .mune-bar {
     display: flex;
-    font-size: 25px;
+    font-size: 30px;
     color: var(--colorFont);
   }
+  header {
+    position: relative;
+  }
+
+  header .contenr .toggle {
+    display: flex;
+    flex-direction: column;
+    background-color: #ededfab6;
+    position: absolute;
+    top: 10vh;
+    z-index: 1000;
+    width: 250px;
+    right: 10px;
+    padding: 20px;
+    border-bottom: none;
+    border-radius: 0 8px 0 8px;
+    overflow: hidden;
+    height: auto;
+    transition: 1s;
+  }
+
+  header .contenr .toggle ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    font-size: 22px;
+    font-weight: bold;
+    height: 18vh;
+    margin-bottom: 10px;
+  }
+  header .contenr .toggle ul li {
+    background: rgb(245, 243, 243);
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  header .contenr .toggle ul li a {
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    color: #000;
+  }
+  header .contenr .toggle ul li a:hover {
+    color: #a2a4e6;
+  }
+  header .contenr .menu {
+    width: 350px;
+    border-right: 1px solid var(--treeColor);
+  }
+  header .contenr .menu {
+    width: 350px;
+    border-right: none;
+  }
 }
-header .contenr .menu {
-  width: 350px;
-  border-right: 1px solid var(--treeColor);
-}
+
 header .contenr .menu2 {
   width: 150px;
 }
-.main{
+.main {
   width: 100%;
   height: 50vh;
-  background-color:#e0e1ff;
+  background-color: #e0e1ff;
   margin: 20px 0;
 }
 footer .contenr nav ul li i {
@@ -254,6 +330,9 @@ footer .contenr .footer-rigth i {
     margin-bottom: 50px;
   }
 }
+.products {
+  position: relative;
+}
 .products .contenr {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -264,6 +343,7 @@ footer .contenr .footer-rigth i {
   min-width: 300px;
   height: auto;
   position: relative;
+
 }
 
 @media (max-width: 340px) {
@@ -273,6 +353,7 @@ footer .contenr .footer-rigth i {
   .products .contenr .cart {
     min-width: 240px;
     height: 472px;
+    margin-bottom: 40px;
   }
 }
 .products .contenr .cart .image {
@@ -288,8 +369,36 @@ footer .contenr .footer-rigth i {
   padding: 13px 0;
   line-height: 3;
 }
-i{
+i {
   cursor: pointer;
 }
+.show {
+  background-color: #a18a68;
+  display: block;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px 0;
+}
 
+.shping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  height: 5vh;
+  padding-right: 10px;
+}
+.shping i {
+  color: #a18a68;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.shping i:hover {
+  transform: scale(1.3);
+}
+
+.des h4 {
+  color: #b47f2f;
+}
 

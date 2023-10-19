@@ -23,8 +23,8 @@
   <body>
     <header>
       <div class="contenr sp-flex-row">
-        <a href="../index.html"><div class="logo">You<span>Shop</span></div></a>
-        <nav class="sp-flex-row">
+        <a href="../index.html"><div class="logo">You<span>Shope</span></div></a>
+        <nav class="sp-flex-row" id="toggle">
           <ul class="menu ar-flex-row">
             <li><a href="#">Shop</a></li>
             <li><a href="#">Blog</a></li>
@@ -43,7 +43,7 @@
           </ul>
         </nav>
         <div class="mune-bar center-flex-row">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="bars"></i>
         </div>
       </div>
     </header>
@@ -55,49 +55,11 @@
     </main>
 
     <div class="products">
-      <div class="contenr sp-flex-culom">
-        <a class="cart">
-          <div class="image">
-            <img src="../image/img.png" alt="image 1" />
-          </div>
-          <div class="des">
-            <h4>Lira Earrings</h4>
-            <span>$ 20,00</span>
-          </div>
-        </a>
-        <div class="images sp-flex-culom">
-          <img src="../image/im.png" alt="image 1" />
-          <img src="../image/im.png" alt="image 1" />
-          <img src="../image/im.png" alt="image 1" />
-        </div>
-        <div class="lefth sp-flex-culom">
-          <h1>C'est un produit merveilleux</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consectetur excepturi neque vitae distinctio, consequatur fugit at
-            quos asperiores nulla assumenda maxime laboriosam ipsa ex veniam
-            voluptatibus libero, voluptates laborum? Officiis.
-          </p>
-          <button>ADD TO CART</button>
-        </div>
+      <div class="contenr sp-flex-culom " id="detailsProdoui">
       </div>
     </div>
-    <div class="contenr cleint">
+    <div class="contenr cleint" id="cleint">
       <h1>Avis clients</h1>
-      <div class="commint sp-flex-culom">
-        <div class="image-name">
-          <img src="../image/user.png" alt="image user" />
-          <h4>BILANOX</h4>
-        </div>
-        <p>C'est un produit merveilleux</p>
-      </div>
-      <div class="commint sp-flex-culom">
-        <div class="image-name">
-          <img src="../image/user.png" alt="image user" />
-          <h4>BILANOX</h4>
-        </div>
-        <p>C'est un produit merveilleux</p>
-      </div>
     </div>
     <footer>
       <div class="contenr">
@@ -132,5 +94,7 @@
         </nav>
       </div>
     </footer>
+    <script src="../js/index.mjs"></script>
+    <script type="module" src="../js/DetailsProdois.mjs"></script>
   </body>
 </html>
