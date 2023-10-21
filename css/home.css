@@ -4,20 +4,23 @@ main .contenr {
   position: relative;
   padding-left: 20px;
   align-items: flex-start;
+  
   border-radius: 10px;
 }
 @media (max-width: 768px) {
   main .contenr {
-    background: rgb(194, 194, 194);
+    background: url(../imageMobile/bgMobile.png);
+    background-repeat: no-repeat;
+  background-size: cover;
   }
 }
 @media (min-width: 768px) {
   main .contenr {
     background: url(../image/Img\ 01.png);
+   
+    
     background-repeat: no-repeat;
-    background-size: cover;
-    
-    
+  background-size: cover;
     color: var(--bg-Color-b);
   }
   main .contenr img {

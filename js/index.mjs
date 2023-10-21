@@ -1,5 +1,5 @@
 import { prodoui } from "./data.mjs";
-
+console.log("cccc")
 // le element html
 const toggle = document.getElementById("toggle");
 const bars = document.getElementById("bars");
@@ -8,12 +8,7 @@ let achterProdoui = localStorage.getItem("prodoui")
   ? JSON.parse(localStorage.getItem("prodoui"))
   : [];
 console.log(JSON.parse(localStorage.getItem("prodoui")));
-// if (localStorage.getItem("prodoui") ==! null) {
-//   achterProdoui = JSON.parse(localStorage.getItem("prodoui"));
-//   console.log(achterProdoui);
-// }else{
-//   achterProdoui = [];
-// }
+
 
 // affiche le mune bar
 bars.addEventListener("click", (e) => {
@@ -75,7 +70,3 @@ btn.forEach((item, index) => {
     }
   });
 });
-
-
-const prints = document.getElementById("printe");
-console.log(prints)
