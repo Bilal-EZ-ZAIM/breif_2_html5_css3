@@ -7,7 +7,7 @@ let achterProdoui = localStorage.getItem("prodoui")? JSON.parse(localStorage.get
 let prod = prodoui.find((item) => {
   return item.id == +id;
 });
-
+console.log(achterProdoui);
 // afficher le detalise un seule prodoui
 function afficherDeta() {
   detailsProdoui.innerHTML += `
@@ -35,7 +35,7 @@ function afficherDeta() {
           <p>
             ${prod.descriptio}
           </p>
-          <button >ADD TO CART</button>
+          <button  id="addcart">ADD TO CART</button>
     </div>
   `;
 }
@@ -56,7 +56,7 @@ function affecherCom() {
 afficherDeta();
 affecherCom();
 
-const btn = document.querySelectorAll(".des  button");
+const btn = document.querySelectorAll("#addcart");
 btn.forEach((item, index) => {
   item.addEventListener("click", () => {
     const unSeul = prodoui.find((item) => {
@@ -68,11 +68,21 @@ btn.forEach((item, index) => {
     });
     if (prodPush === undefined) {
       achterProdoui.push(unSeul);
-      console.log("yes push");
+      Swal.fire({
+        position: "center",
+        title: "Oui , mantaint le produit au panier",
+        showConfirmButton: false,
+        timer: 1500,
+      });
       console.log(achterProdoui);
       localStorage.setItem("prodoui", JSON.stringify(achterProdoui));
     } else {
-      console.log("C'est la");
+      Swal.fire({
+        position: 'center',
+        title: 'Oui , le produit au panier',
+        showConfirmButton: false,
+        timer: 1500
+      })
     }
   });
 });

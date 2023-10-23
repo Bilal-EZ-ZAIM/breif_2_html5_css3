@@ -78,6 +78,3 @@ btn.forEach((item, index) => {
     }
   });
 });
-
-
-console.log("hgjkl")
