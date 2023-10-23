@@ -61,24 +61,28 @@
         <form class="one-info sp-flex-culom">
           <h1>Billing Address</h1>
           <div class="div">
-            <div class="sp-flex-culom">
-              <label for="frist-name">First name</label>
+            <div class="sp-flex-culom val" >
+              <label for="frist-name">First name *</label>
               <input type="text" id="frist-name" placeholder="first name" required/>
+              <p>Entrez 8 caractères ou plus</p>
             </div>
-            <div class="sp-flex-culom">
-              <label for="last-name">Last name</label>
+            <div class="sp-flex-culom val">
+              <label for="last-name">Last name *</label>
               <input type="text" id="last-name" placeholder="last name" required />
+              <p>Entrez 8 caractères ou plus</p>
             </div>
           </div>
           <div>
             <div class="div">
-              <div class="sp-flex-culom">
-                <label for="email">E-mail</label>
+              <div class="sp-flex-culom val">
+                <label for="email">E-mail *</label>
                 <input type="email" id="email" placeholder="exmpol@gamil.com" required />
+                <p>@gamil.com</p>
               </div>
-              <div class="sp-flex-culom">
-                <label for="phone">Mobile No</label>
+              <div class="sp-flex-culom val" >
+                <label for="phone">Mobile No *</label>
                 <input type="number" id="phone" placeholder="+212 0612345678" required />
+                <p>+212 maroc</p>
               </div>
             </div>
           </div>
@@ -93,14 +97,14 @@
                   <option value="use">USE</option>
                 </select>
               </div>
-              <div class="sp-flex-culom">
-                <label for="City">City</label>
+              <div class="sp-flex-culom val" >
+                <label for="City">City *</label>
                 <input type="text" id="City" placeholder="City" required />
               </div>
             </div>
             
           </div>
-          <button type="submit" class="butto">submit</button>
+          <button type="submit" class="butto" id="submit">submit</button>
         </form>
         <div class="lefth-information">
           <div class="top">
