@@ -68,12 +68,21 @@ btn.forEach((item, index) => {
     });
     if (prodPush === undefined) {
       achterProdoui.push(unSeul);
-      console.log("yes push");
+      Swal.fire({
+        position: "center",
+        title: "Oui , mantaint le produit au panier",
+        showConfirmButton: false,
+        timer: 1500,
+      });
       console.log(achterProdoui);
       localStorage.setItem("prodoui", JSON.stringify(achterProdoui));
     } else {
-      console.log("C'est la");
+      Swal.fire({
+        position: 'center',
+        title: 'Oui , le produit au panier',
+        showConfirmButton: false,
+        timer: 1500
+      })
     }
   });
 });
-let addcart = document.getElementById("addcart");
