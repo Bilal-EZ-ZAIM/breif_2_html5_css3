@@ -33,7 +33,7 @@ function afficheProdoui() {
       </div>
        
     </div>
-    <a class="show" href="./pages/product.html#${item.id}" target="_blank">show more</a>
+    <a class="show" href="./pages/product.html#${item.id}">show more</a>
   </div>
         `;
   });
