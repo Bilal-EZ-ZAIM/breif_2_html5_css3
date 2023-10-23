@@ -35,7 +35,7 @@ function afficherDeta() {
           <p>
             ${prod.descriptio}
           </p>
-          <button>ADD TO CART</button>
+          <button >ADD TO CART</button>
     </div>
   `;
 }
