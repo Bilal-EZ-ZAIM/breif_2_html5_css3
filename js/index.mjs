@@ -11,8 +11,16 @@ console.log(JSON.parse(localStorage.getItem("prodoui")));
 
 
 // affiche le mune bar
+let wx = 0;
 bars.addEventListener("click", (e) => {
   toggle.classList.toggle("toggle");
+  if(wx === 0){
+    bars.setAttribute("class","fa-solid fa-x");
+    wx = 1
+  }else{
+    bars.setAttribute("class","fa-solid fa-bars");
+    wx = 0;
+  }
 });
 
 // afficher le prodoui par javaScribt
