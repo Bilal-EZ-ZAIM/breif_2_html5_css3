@@ -2,6 +2,7 @@ const table = document.getElementById("table");
 let cartProdoui = JSON.parse(localStorage.getItem("prodoui"));
 const Subtotal = document.getElementById("Subtotal");
 const Total = document.getElementById("Total");
+
 let caculTotal = 0;
 function afficheProdouiCart() {
   cartProdoui.map((item) => {
