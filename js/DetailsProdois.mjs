@@ -7,7 +7,7 @@ let achterProdoui = localStorage.getItem("prodoui")? JSON.parse(localStorage.get
 let prod = prodoui.find((item) => {
   return item.id == +id;
 });
-
+console.log(achterProdoui);
 // afficher le detalise un seule prodoui
 function afficherDeta() {
   detailsProdoui.innerHTML += `
@@ -35,7 +35,7 @@ function afficherDeta() {
           <p>
             ${prod.descriptio}
           </p>
-          <button>ADD TO CART</button>
+          <button id="addcart">ADD TO CART</button>
     </div>
   `;
 }
@@ -56,7 +56,7 @@ function affecherCom() {
 afficherDeta();
 affecherCom();
 
-const btn = document.querySelectorAll(".des  button");
+const btn = document.querySelectorAll("#addcart");
 btn.forEach((item, index) => {
   item.addEventListener("click", () => {
     const unSeul = prodoui.find((item) => {
@@ -76,3 +76,4 @@ btn.forEach((item, index) => {
     }
   });
 });
+let addcart = document.getElementById("addcart");
