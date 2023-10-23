@@ -335,18 +335,41 @@ footer .contenr .footer-rigth i {
 }
 .products .contenr {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
 }
-
 .products .contenr .cart {
-  min-width: 300px;
-  height: auto;
-  position: relative;
-
+  max-width: 400px;
+  height: 472px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+@media (max-width: 1290px) {
+  .products .contenr {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .products .contenr .cart {
+    height: 472px;
+    margin-bottom: 40px;
+  }
 }
 
-@media (max-width: 340px) {
+
+@media (max-width: 665px) {
+  .products .contenr {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .products .contenr .cart {
+    max-width: 400px;
+    height: 472px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+   
+  }
+}
+
+
+@media (max-width: 450px) {
   .products .contenr {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }

@@ -9,7 +9,7 @@ function afficheProdouiCart() {
         <tr>
             <td>
               <div class="ar-flex-row">
-                <img src="../${item.image}" /> Lira Earrings
+                <img src="../${item.image}" /> ${item.title}
               </div>
             </td>
             <td>$ ${item.prix}</td>

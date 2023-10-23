@@ -41,7 +41,7 @@ export let prodoui = [
         title :"Hal Earrings",
         prix :25.00,
         image:"./image/Img 02.png",
-        images:["./image/img.png" , "./image/img.png" , "./image/img.png"],
+        images:["./image/Img 02.png" , "./image/Img 02.png" , "./image/Img 02.png"],
         content:1,
         commintCliut:[
             {
@@ -205,6 +205,7 @@ export let prodoui = [
         quos asperiores nulla assumenda maxime laboriosam ipsa ex veniam
         voluptatibus libero, voluptates laborum? Officiis.
         `
-    }
+    },
+    
 
 ]

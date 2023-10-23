@@ -2,7 +2,10 @@
     margin-top: 40px;
 }
 .products .contenr .images{
-    height: 50vh;
+    height:auto;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: auto;
 }
 .products .contenr {
     display: flex;
@@ -13,7 +16,6 @@
     width: 100px;
     height: 100px;
     cursor: pointer;
-    
 }
 .products .contenr .lefth{
     gap: 40px;
@@ -51,4 +53,10 @@
 }
 .cleint .image-name img{
     width: 50px;
+}
+.cart{
+    width: 900px;
+}
+.des€{
+    background-color: #49B0EA;
 }

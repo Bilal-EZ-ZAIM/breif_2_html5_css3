@@ -12,7 +12,7 @@ let prod = prodoui.find((item) => {
 function afficherDeta() {
   detailsProdoui.innerHTML += `
 
-  <a class="cart">
+  <div class="cart">
           <div class="image">
             <img src="../${prod.image}" alt="image 1" />
           </div>
@@ -20,8 +20,8 @@ function afficherDeta() {
             <h4>${prod.title}</h4>
             <span>$ ${prod.prix}</span>
           </div>
-        </a>
-        <div class="images sp-flex-culom" id="images">
+  </div>
+        <div class="images" id="images">
         ${prod.images.map(item => `
           <img src="../${item}" alt="Product Image" />
           `).join(" ")
@@ -30,7 +30,7 @@ function afficherDeta() {
         </div>
        
     </div>
-        <div class="lefth sp-flex-culom des">
+        <div class="lefth sp-flex-culom">
           <h1>C'est un produit merveilleux</h1>
           <p>
             ${prod.descriptio}
