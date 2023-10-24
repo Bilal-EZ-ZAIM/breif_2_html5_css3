@@ -76,3 +76,5 @@ sprumer.forEach((item , index)=>{
     location.reload();
   })
 })
+
+console.log("modifer");
