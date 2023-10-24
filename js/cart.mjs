@@ -39,7 +39,7 @@ for (let i = 0; i < cartProdoui.length; i++) {
 Subtotal.innerText = `$ ${caculTotal}`;
 Total.innerText = `$ ${caculTotal + 30}`;
 
-const pluMin = document.querySelectorAll(".ar-flex-row button");
+const pluMin  = document.querySelectorAll(".ar-flex-row button");
 const sprumer = document.querySelectorAll(".supreme");
 
 pluMin.forEach((item, index) => {
@@ -76,3 +76,5 @@ sprumer.forEach((item , index)=>{
     location.reload();
   })
 })
+
+

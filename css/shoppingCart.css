@@ -74,13 +74,12 @@
 .table .lefth-shopping form button:hover{
     color: #000;
 }
-@media (max-width:800px) {
-    .table {
-        overflow-x: scroll;
-    }
+@media (max-width:650px) {
+
     .table table{
         min-width: 500px;
         border-collapse: collapse;
+        display: none;
         
     }
     .table .lefth-shopping form button{
@@ -91,6 +90,10 @@
         width: 150px;
         padding: 5px 10px;
         font-size: 16px;
+    }
+    .imag{
+        width: 150px;
+        height: 150px;
     }
 }
 .table .lefth-shopping .final{
