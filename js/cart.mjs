@@ -76,5 +76,3 @@ sprumer.forEach((item , index)=>{
     location.reload();
   })
 })
-
-
