@@ -25,7 +25,7 @@ function afficheProdouiCart() {
              }> <i class="fa-sharp fa-solid fa-minus pluMin"  ></i></button>
             </td>
             <td>$ ${item.prix * item.content}</td>
-            <td > <button class="supreme" value=${
+            <td class="tdd" > <button class="supreme" value=${
               item.id
             }> <i class="fa-sharp fa-solid fa-trash"></i> </button> </td>
         </tr>

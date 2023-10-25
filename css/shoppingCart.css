@@ -75,15 +75,35 @@
     color: #000;
 }
 @media (max-width:650px) {
-
+    .scrol{
+        overflow-x: scroll;
+    }
     .table table{
         min-width: 500px;
         border-collapse: collapse;
-        display: none;
-        
+        font-size: 14px;
+    }
+    .table table tbody tr td:nth-child(1){
+        width: 200px;
+        padding-left: 1px;
+    }
+    .table table tbody tr td:nth-child(4){
+        width: 80px;
+        padding-left: 1px;
+    }
+    .table table tbody tr td:nth-child(2){
+        width: 100px;
+        padding-left: 1px;
+    }
+    .table table tbody tr td:nth-child(3) button{
+        background-color: #63591a;
+        font-size: 12px;
+    }
+    .table table tbody tr td:nth-child(3){
+        width: 100px;
     }
     .table .lefth-shopping form button{
-        width:100px;
+        width:150px;
         font-size: 12px;
     }
     .table .lefth-shopping form input{
@@ -92,8 +112,14 @@
         font-size: 16px;
     }
     .imag{
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
+    }
+    .table table tbody tr td:nth-child(5){
+        width: 50px;
+    }
+    .table table tbody tr td:nth-child(5) button{
+        padding: 0;
     }
 }
 .table .lefth-shopping .final{

@@ -205,7 +205,5 @@ export let prodoui = [
         quos asperiores nulla assumenda maxime laboriosam ipsa ex veniam
         voluptatibus libero, voluptates laborum? Officiis.
         `
-    },
-    
-
+    }
 ]
